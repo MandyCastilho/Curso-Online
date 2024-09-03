@@ -15,8 +15,29 @@ body{
 
 h1{
     color: #661d49; 
+    text-decoration: underline;
 }
 
 h2{
     color: #ba39a4; 
+}
+
+.basico{
+    color: rgb(19, 106, 19);
+    font-weight: lighter;
+}
+
+.intermediario{
+    color: rgb(105, 96, 17);
+    font-weight: lighter;
+}
+
+.avancado{
+    color: rgb(101, 22, 22);
+    font-weight: lighter;
+}
+
+p{
+    text-align: justify;
+    text-indent: 30px;
 }
