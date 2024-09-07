@@ -26,6 +26,20 @@
     padding: 0%;
 }
 
+body::-webkit-scrollbar {
+    width: 15px; /* width of the entire scrollbar */
+}
+   
+body::-webkit-scrollbar-track {
+    background: var(--cor1); /* color of the tracking area */
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor5); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid var(--cor4); /* creates padding around scroll thumb */
+}
+
 body{
     background-color: var(--cor0);
     font-family:var(--fonte-padrao) ;
