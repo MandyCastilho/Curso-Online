@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Esse é o meu décimo nono site">
+        <meta name="keywords" content="programação,html,css,javascript">
+        <meta name="author" content="Amanda Castilho">
+        <title>Testes</title>
+
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f0f0f0;
+            }
+
+            .bloco {
+                background-image: url(imagens/wallpaper003.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 30vh;
+                width: 30vw;
+                border: 1px solid black;
+                margin: 10px;
+                border-radius: 20px;
+                transition: background-position 0.5s ease, transform 0.3s ease, background-image 1s ease, filter 0.3s ease;
+                filter: blur(0);
+                cursor: pointer;
+            }
+
+            .bloco:hover {
+                transform: scale(1.05);
+                filter: blur(3px); /* Desfoque leve no hover */
+                background-image: url(imagens/wallpaper006.jpg); 
+            }
+
+            /* Efeito ao clicar na div */
+            .bloco:active {
+                transform: rotate(10deg) scale(1.1); /* Rotação e escala ao clicar */
+                background-color: rgba(255, 255, 255, 0.5); /* Cor semitransparente ao clicar */
+                transition: transform 0.2s ease; /* Transição rápida ao clicar */
+            }
+
+            #q1 {
+                background-position: left top;
+            }
+
+            #q2 {
+                background-position: left center;
+            }
+
+            #q3 {
+                background-position: right bottom;
+            }
+
+            #q4 {
+                background-position: center center;
+            }
+
+            /* Responsividade para telas menores */
+            @media (max-width: 768px) {
+                .bloco {
+                    width: 45vw;
+                    height: 25vh;
+                    filter: blur(4px); /* Desfoque maior em telas menores */
+                }
+            }
+
+            @media (max-width: 480px) {
+                .bloco {
+                    width: 80vw;
+                    height: 20vh;
+                    filter: blur(5px); /* Aumenta o desfoque em telas menores */
+                }
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="bloco" id="q1"></div>
+        <div class="bloco" id="q2"></div>
+        <div class="bloco" id="q3"></div>
+        <div class="bloco" id="q4"></div>
+
+    </body>
+
+</html>
+
