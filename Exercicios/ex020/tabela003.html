@@ -12,17 +12,19 @@
         <style>
 
             body{
-                font-family: Arial, Helvetica, sans-serif ;
-            }
-
-            h1{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace, Helvetica, sans-serif;
-                color: blueviolet;
+                font-family: Arial, Helvetica, sans-serif;
             }
 
             table{
                 width: 500px;
                 border-collapse: collapse;
+            }
+
+            caption{
+                font-size: 1.5em;
+                font-weight: bolder;
+                padding: 10px;
+                background-color: lightgrey;
             }
 
             td, th{
@@ -51,6 +53,7 @@
         <!--
             ANATOMIA PARA TABELAS GRANDES
                 TABLE
+                CAPTION
                     THEAD
                         TR, TD, TH
                     TBODY
@@ -61,12 +64,14 @@
 
         <table>
 
+            <caption>População das Unidades Federativas </caption>
+
             <thead>
 
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
-                    <th>% da população</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                    <th scope="col">% da população</th>
                 </tr>
 
             </thead>
@@ -240,7 +245,7 @@
             <tfoot>
 
                 <tr>
-                    <th>Total de habitantes</th>
+                    <th scope="row">Total de habitantes</th>
                     <td class="numero"><strong>210.147.125</strong></td>
                 </tr>
 
