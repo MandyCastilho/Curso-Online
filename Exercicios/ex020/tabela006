@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Esse é o meu vigésimo site">
+        <meta name="keywords" content="programação,html,css,javascript">
+        <meta name="author" content="Amanda Castilho">
+        <title>Tabelas</title>
+    </head>
+    <body>
+
+        <h1>Exercício de tabela</h1>
+
+        <table>
+
+            <caption>Cadastro</caption>
+
+        </table>
+
+    </body>
+
+</html>
+
+  
