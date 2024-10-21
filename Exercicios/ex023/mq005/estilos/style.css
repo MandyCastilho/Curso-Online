@@ -35,6 +35,7 @@ i#burguer:hover{
 
 menu{
     display: none;
+    text-align: center;
 }
 
 menu > ul{

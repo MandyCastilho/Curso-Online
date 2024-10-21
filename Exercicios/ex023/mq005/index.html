@@ -8,11 +8,12 @@
         <meta name="keywords" content="programação,html,css,javascript">
         <meta name="author" content="Amanda Castilho">
         <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="estilos/media-query.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Media Query</title>
     </head>
 
-    <body>
+    <body onresize="mudouTamanho()">
 
         <header>
 
@@ -58,6 +59,15 @@
         </main>
 
         <script>
+
+            function mudouTamanho(){
+                if (window.innerWidth >=768){
+                    itens.style.display = 'block'
+                }
+                else {
+                    itens.style.display = 'none'
+                }
+            }
 
             function clickMenu(){
                 if (itens.style.display == 'block'){
