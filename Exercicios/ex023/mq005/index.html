@@ -8,6 +8,7 @@
         <meta name="keywords" content="programação,html,css,javascript">
         <meta name="author" content="Amanda Castilho">
         <link rel="stylesheet" href="estilos/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Media Query</title>
     </head>
 
@@ -17,7 +18,9 @@
 
             <h1>Meu site</h1>
 
-            <menu>
+            <i id="burguer" class="material-icons" onclick="clickMenu()" >menu</i>
+
+            <menu id="itens">
 
                 <ul>
                     <li> <a href="#"> Opção 1</a></li>
@@ -53,6 +56,19 @@
             </article>
 
         </main>
+
+        <script>
+
+            function clickMenu(){
+                if (itens.style.display == 'block'){
+                    itens.style.display = 'none'
+                } 
+                else{
+                    itens.style.display = 'block'
+                }
+            }
+
+        </script>
 
     </body>
 
