@@ -7,25 +7,34 @@
         <meta name="description" content="Esse é o meu vigésimo quarto site">
         <meta name="keywords" content="programação,html,css,javascript">
         <meta name="author" content="Amanda Castilho">
-        <title>Flexile Box 4</title>
+        <title>Flexile Box 5</title>
 
         <style>
 
-            div.conteiner{
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            body{
                 background-color: lightsalmon;
-                height: 300px;
+            }
+
+            main{
+                background-color: lightgreen;
+                height: 100vh;
+                width: 100vw;
                 display: flex;
                 flex-flow: row nowrap;
-                justify-content: space-evenly;
+                justify-content: center;
                 align-items: center;
             }
-                
 
-            div.item{
-                background-color: lightskyblue;
-                border: 1px solid black;
-                text-align: center;
-                padding: 10px;
+            section{
+                background-color: lightseagreen;
+                height: 200px;
+                width: 200px;
             }
 
         </style>
@@ -34,18 +43,19 @@
 
     <body>
 
-        <div class="conteiner">
+        <main>
 
-            <div class="item">A</div>
-            <div class="item">B</div>
-            <div class="item">C</div>
-            <div class="item">D</div>
-            <div class="item">E</div>
-            <div class="item">F</div>
-            <div class="item">G</div>
+            <section>
 
-        </div>
+                <h1>Tela de Login</h1>
+
+            </section>
+
+        </main>
 
     </body>
 
 </html>
+        
+        
+           
